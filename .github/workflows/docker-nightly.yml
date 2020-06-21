@@ -24,7 +24,7 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: "phpsrc/php-nightly-master"
-        dockerfile: .github/Dockerfile.debian
+        dockerfile: Dockerfile.debian
         tags: "latest,${{ steps.date.outputs.date }}"
         tag_with_sha: true
         path: php-src
@@ -45,7 +45,7 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: "phpsrc/php-nightly-7.4"
-        dockerfile: .github/Dockerfile.debian
+        dockerfile: Dockerfile.debian
         tags: "latest,${{ steps.date.outputs.date }}"
         tag_with_sha: true
         path: php-src
