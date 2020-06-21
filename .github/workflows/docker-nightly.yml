@@ -29,10 +29,10 @@ jobs:
   php-7.4:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          repository: php/php-src
-          ref: PHP-7.4
+    - uses: actions/checkout@v2
+      with:
+        repository: php/php-src
+        ref: PHP-7.4
     - name: Get current date
       id: date
       run: echo "::set-output name=date::$(date +'%Y%m%d')"
