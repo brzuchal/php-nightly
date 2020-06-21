@@ -27,8 +27,6 @@ jobs:
         tags: "latest,${{ steps.date.outputs.date }}"
         tag_with_sha: true
         path: php-src
-        dockerfile: Dockerfile.debian
-
   php-74:
     runs-on: ubuntu-latest
     steps:
@@ -49,4 +47,3 @@ jobs:
         tags: "latest,${{ steps.date.outputs.date }}"
         tag_with_sha: true
         path: php-src
-        dockerfile: Dockerfile.debian
