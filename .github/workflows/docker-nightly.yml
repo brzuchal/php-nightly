@@ -26,7 +26,7 @@ jobs:
         tags: "latest,${{ steps.date.outputs.date }}"
         tag_with_sha: true
 
-  php-7.4:
+  php-74:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
