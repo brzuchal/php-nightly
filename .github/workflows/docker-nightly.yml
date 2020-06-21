@@ -20,7 +20,7 @@ jobs:
     - uses: docker/build-push-action@v1
       with:
         username: ${{ github.repository_owner }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: "phpsrc/php-nightly-master"
         dockerfile: .github/Dockerfile.debian
         tags: "latest,${{ steps.date.outputs.date }}"
@@ -39,7 +39,7 @@ jobs:
     - uses: docker/build-push-action@v1
       with:
         username: ${{ github.repository_owner }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: "phpsrc/php-nightly-7.4"
         dockerfile: .github/Dockerfile.debian
         tags: "latest,${{ steps.date.outputs.date }}"
