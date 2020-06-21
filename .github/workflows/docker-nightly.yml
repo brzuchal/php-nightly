@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         repository: php/php-src
         ref: master
@@ -30,6 +31,7 @@ jobs:
   php-74:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - uses: actions/checkout@v2
       with:
         repository: php/php-src
